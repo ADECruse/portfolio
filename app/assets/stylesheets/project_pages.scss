@@ -1,0 +1,89 @@
+// Place all the styles related to the ProjectPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+h1 {
+	display: block;
+	text-align: center;
+	font-size: 90px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+h2 {
+	text-align: center;
+	font-style: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#buttons {
+	height: 80px;
+	width: 380px;
+	padding: 10px 15px 10px 15px;
+ 	margin: 5px auto 5px auto;
+
+
+
+}
+
+button {
+
+	float: left;
+	display: inline-block;
+	background-color: white;
+	border-style: none;
+ 	border: 1px solid black;
+ 	font-size: 13px;
+ 	font-weight: bold;
+ 	height: 40px;
+ 	width: 100px;
+	padding: 10px 15px 10px 15px;
+ 	margin: 5px auto 5px 10px;
+
+
+
+
+}
+
+#wrapper {
+
+
+	width: 960px;
+	height: 960px;
+	margin: auto;
+
+
+
+
+
+}
+
+.grid {
+
+	float: left;
+	clear: right;
+	border: 1px solid black;
+	opacity: 1.0;
+
+
+
+
+
+}
+
+.black {
+
+	background-color: black;
+
+}
