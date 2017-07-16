@@ -1,5 +1,5 @@
 module ProjectPagesHelper
-  def caesar_cipher(string = 'encrypt', number = 2)
+  def caesar_cipher(string = "This is a test", number = "2")
   encrypt_this = string.split(//)
   encrypt_this.map! do |i|
     if /[a-z]/ =~ i # First I use a regexp to search for lowercase letters

@@ -4,7 +4,7 @@
 
 
 
-h1 {
+/*h1 {
 	display: block;
 	text-align: center;
 	font-size: 90px;
@@ -25,48 +25,26 @@ h3 {
 	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 5px;
-}
+} */
+.center-block {float: none !important}
 
-#buttons {
+
+
+#sketch {
 	height: 80px;
 	width: 380px;
 	padding: 10px 15px 10px 15px;
  	margin: 5px auto 5px auto;
-
-
-
 }
 
-button {
 
-	float: left;
-	display: inline-block;
-	background-color: white;
-	border-style: none;
- 	border: 1px solid black;
- 	font-size: 13px;
- 	font-weight: bold;
- 	height: 40px;
- 	width: 100px;
-	padding: 10px 15px 10px 15px;
- 	margin: 5px auto 5px 10px;
-
-
-
-
-}
+/* Important!
+ * Below is everything needed to make the etch-a-sketch grid function correctly */
 
 #wrapper {
-
-
 	width: 960px;
 	height: 960px;
 	margin: auto;
-
-
-
-
-
 }
 
 .grid {
@@ -75,15 +53,8 @@ button {
 	clear: right;
 	border: 1px solid black;
 	opacity: 1.0;
-
-
-
-
-
 }
 
 .black {
-
 	background-color: black;
-
 }

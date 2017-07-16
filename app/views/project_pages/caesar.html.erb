@@ -1,10 +1,36 @@
-
-<form class="form-signin">
-  <h2 class="form-signin-heading">Caesar Cipher</h2>
-  <input type='text' name='string' class="form-control" placeholder="Enter your text here" required autofocus/>
-  <input type='number' name='number' class="form-control" placeholder="2" required/>
-  <input type='submit' value='Encrypt!' class="btn btn-lg btn-primary btn-block"/>
-</form>
-
-<p><%= caesar_cipher("Alan", 2) %></p>
-<!-- params[:string], params[:number]-->
+<% provide(:title, "Caesar Cipher") %>
+<div class="text-center">
+  <div>
+    <h1>Caesar Cipher</h1>
+    <p>In cryptography, a Caesar cipher is one of the simplest and most widely known encryption techniques.
+       It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.
+       For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.
+       The method is named after Julius Caesar, who used it in his private correspondence</p>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 center-block">
+      <form>
+        <div class="form-group">
+          <label for="InputText">Text to be encrypted</label>
+          <input type='text' name='string' class="form-control" placeholder="Enter your text here" required autofocus/>
+        </div>
+        <div class="form-group">
+          <label for="CipherKey">Cipher key</label>
+          <input type='number' name='number' class="form-control" placeholder="2" required/>
+          <p class="help-block">How many places to shift the letters down the alphabet</p>
+        </div>
+        <input type='submit' value='Encrypt' class="btn btn-lg btn-primary "/>
+        <% if params[:string].nil? == true
+          caesar_cipher("This is a test", 2)
+            else
+              encrypted = caesar_cipher(params[:string], params[:number])
+            end %>
+      </form>
+      <hr>
+      <div class="well">
+        <p><%= encrypted %></p>
+      </div>
+    </div>
+    </div>
+</div>
+</div>

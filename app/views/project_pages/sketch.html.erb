@@ -1,20 +1,27 @@
-<div class="sketch">
-  <h1>Draw with Alan!</h1>
-	<h2><i>"Any customer can have a car painted any color that he wants so long as it is black"</i><br> - Henry Ford</h2>
-	<h3>Click an option below to start</h3>
-	<div id="buttons">
-		<button id="classic">
+<% provide(:title, "Etch-a-Sketch") %>
+<div>
+  <h1 class="text-center">Draw with Alan! <small>Click an option below to start</small></h1>
+  <div class="row">
+    <div class="col-xs-6 center-block">
+      <blockquote>
+      <p>Any customer can have a car painted any color that he wants so long as it is black</p>
+      <footer>Henry Ford</footer>
+    </blockquote>
+  </div>
+  </div>
+	<div id="sketch">
+		<button type="button" class="btn btn-lg btn-default" id="classic">
 			Classic
 		</button>
-		<button id="gradient">
+		<button type="button" class="btn btn-lg btn-default" id="gradient">
 			Gradient
 		</button>
-		<button id="rainbow">
+		<button type="button" class="btn btn-lg btn-default" id="rainbow">
 			Rainbow
 		</button>
 	</div>
 
 	<div id='wrapper'>
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "project_pages" %>
 	</div>
 </div>
